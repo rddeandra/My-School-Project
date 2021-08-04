@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  height: 600px;
+ 
+  background: linear-gradient(to bottom, rgba(91, 150, 245,1), rgba(91, 150, 245,1), rgba(255,0,0,0));
+}
+#sun{
+	position:absolute;
+    top:8rem;
+    left:50rem;
+    animation:hai 10000ms ;
+}
+#blok1{
+	position:absolute;
+	width:7rem;
+    height:7rem;
+    background:rgba(255,255,0);
+        animation: spin 20s infinite;
+        border-radius: 5px;
+}
+#blok2{
+position:absolute;
+	width:7rem;
+    height:7rem;
+    background:rgba(255,255,0);
+    top:-2px;
+    transform: rotate(45deg);
+        animation: spin2 20s infinite ;
+        border-radius: 5px;
+}
+#blok3{
+position:absolute;
+	width:8rem;
+    height:8rem;
+    background:rgba(91, 150, 245,1);
+    top:-9px;
+    left:-7px;
+    z-index:1;
+    border-radius:50%;
+
+}
+#blok4{
+position:absolute;
+	width:7rem;
+    height:7rem;
+    background:rgba(255,255,0);
+    top:-1%;
+    left:1.5%;
+    z-index:2;
+    border-radius:50%;
+    
+}
+#blok5{
+position:absolute;
+	width:4rem;
+    height:4rem;
+    background:white;
+    top:20px;
+    left:22px;;
+    z-index:2;
+    box-shadow:0 0 0 1px #595954;
+    border-radius:50% 0;
+    transform:rotate(45deg);
+    }
+    #blok6{
+position:absolute;
+	width:2.5rem;
+    height:2.5rem;
+    background:black;
+    top:30px;
+    left:35px;
+    z-index:2;
+    border-radius:50%;
+    animation: look 10000ms infinite ;
+    }
+    h1{
+    	position:absolute;
+        left:18.5rem;
+        font-family: sans-serif;
+        font-weight: 700;
+        top:1em;
+        color:#ebe04d;
+        font-size: 5em;
+         animation:what 10000ms ;
+       
+    }
+    @keyframes what{
+0%,80%{
+	color:rgba(91, 150, 245,1);
+    }
+
+100%{
+	
+    display:block;
+}
+}
+ @keyframes hai{
+0%{
+
+    top:50em;
+    }
+
+100%{
+	
+    top:8em;
+}
+}
+
+@keyframes spin{
+0%{
+	transform:rotate(0deg);
+}
+100%{
+	transform:rotate(360deg);
+}
+}
+@keyframes spin2{
+0%{
+	transform:rotate(45deg);
+}
+100%{
+	transform:rotate(405deg);
+}
+}
+@keyframes look{
+0%, 100%{
+	top:30px;
+    left:35px;
+}
+
+10%{
+	top:25px;
+    left:25px;
+}
+25%{
+	top:40px;
+    left:25px;
+}
+50%{
+	top:40px;
+    left:40px;
+}
+75%{
+	top:26px;
+    left:43px;
+}
+
+}
+#mount1{
+    position: absolute;
+    height: 20px;
+    top:-39%;
+    border:610px solid transparent;
+    border-right-color: #0b3b24;
+    z-index: 5;
+    transform: rotate(90deg);
+}
+#mount2{
+    position: absolute;
+    left: 45%;
+    top:-70%;
+    height: 10px;
+    border:710px solid transparent;
+    border-right-color: #0b3b24;
+    z-index: 5;
+    transform: rotate(90deg);
+}
+#mount3{
+    position: absolute;
+    left:-10%;
+    height: 80px;
+    top:20%;
+    border:400px solid transparent;
+    border-right-color: #0b3b24;
+    z-index: 5;
+    transform: rotate(90deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Am I A Sun?</h1>
+
+<center>
+<div id="sun">
+<div id="blok1"></div>
+<div id="blok2"></div>
+<div id="blok3"></div>
+<div id="blok4"></div>
+<div id="blok5"></div>
+<div id="blok6"></div>
+</div>
+</center>
+<div id="mount1"></div>
+<div id="mount2"></div>
+<div id="mount3"></div>
+</body>
+</html>
