@@ -11,7 +11,7 @@ body {
 	position:absolute;
     top:8rem;
     left:50rem;
-    animation:hai 10000ms ;
+    animation:hai 15000ms ;
 }
 #blok1{
 	position:absolute;
@@ -90,6 +90,7 @@ position:absolute;
     @keyframes what{
 0%,80%{
 	color:rgba(91, 150, 245,1);
+    z-index: -10;
     }
 
 100%{
@@ -149,6 +150,68 @@ position:absolute;
 }
 
 }
+.cloud{
+    position:absolute;
+    top:4rem;
+    left:50rem;
+    animation: wii 130000ms infinite;
+}
+.cloud2{
+    position:absolute;
+    top:15rem;
+    left:-170rem;
+    animation: wii2 150000ms infinite;
+}
+.cloud3{
+    position:absolute;
+    top:20rem;
+    right:-50rem;
+    z-index: 5;
+    animation: wii3 100000ms infinite;
+}
+#cloud1{
+    position:absolute;
+    background:#e4e9f0;
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    z-index: -1;
+}
+#cloud2{
+    position:absolute;
+    background:#e4e9f0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top:-35px;
+    left:35px;
+    z-index: -1;
+}
+#cloud3{
+    position:absolute;
+    background:#e4e9f0;
+    width: 160px;
+    height: 100px;
+    border-radius: 50px;
+    top:-50px;
+    left:100px;
+    z-index: -1;
+}
+@keyframes wii{
+    0%{left:100em;}
+    100%{left:-100em;}
+    
+}
+@keyframes wii2{
+    0%{left:110em;}
+    100%{left:-110em;}
+    
+}
+@keyframes wii3{
+    0%{right:100em;}
+    100%{right:-100em;}
+    
+}
 #mount1{
     position: absolute;
     height: 20px;
@@ -194,6 +257,21 @@ position:absolute;
 <div id="blok6"></div>
 </div>
 </center>
+<div class="cloud">
+    <div id="cloud1"></div>
+     <div id="cloud2"></div>
+      <div id="cloud3"></div>
+</div>
+<div class="cloud2">
+    <div id="cloud1"></div>
+     <div id="cloud2"></div>
+      <div id="cloud3"></div>
+</div>
+<div class="cloud3">
+    <div id="cloud1"></div>
+     <div id="cloud2"></div>
+      <div id="cloud3"></div>
+</div>
 <div id="mount1"></div>
 <div id="mount2"></div>
 <div id="mount3"></div>
